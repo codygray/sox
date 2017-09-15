@@ -393,6 +393,9 @@ li.fixedTopbar-siteLink {
     width: auto;
     font-size: 90%;
 }
+.linkedPostsInline-loaded-body-sox p {
+    font-weight: inherit;
+}
 
 
 /*enhancedEditor (enhanced_editor folder)*/

@@ -209,6 +209,21 @@
             }
         },
 
+        fixedSearch: function(settings) {
+            // Description: Prevent sizing animations for the search box in the topbar
+
+            if (settings.keyboardSearchOnly) {
+                $('.so-header').addClass('fixed-search-kbd-sox');
+            } else {
+                $('.so-header').addClass('fixed-search-sox');
+            }
+                        
+            // Trim "Developer Jobs" button caption to just "Jobs" to save space,
+            // at the risk of less traffic and thus less revenue to SO :-)
+            // (https://meta.stackoverflow.com/a/351276).
+            $('#nav-jobs').text('Jobs');             
+        },
+
         highlightQuestions: function() {
             // Description: For highlighting only the tags of favorite questions
 

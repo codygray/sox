@@ -52,6 +52,18 @@
                 "desc": "Enable on Ask Ubuntu?"
             }]
         }, {
+            "name": "fixedSearch",
+            "desc": "Disable animation on search box in Stack Overflow topbar",
+            "extended_description": "Disables the expansion animation and state-change when the search box gets focus. Also shortens \"Developer Jobs\" to \"Jobs\" so there is more room for search on the topbar. (Applies only to Stack Overflow's topbar.)",
+            "meta": "",
+            "match": "*://stackoverflow.com/*",
+            "exclude": "*://chat.*.com/*,SE1.0",
+            "settings": [{
+                "id": "keyboardSearchOnly",
+                "type": "checkbox",
+                "desc": "Maximize space by removing all buttons/glyphs, leaving only keyboard interface"
+            }]
+        }, {
             "name": "highlightQuestions",
             "desc": "Change highlighting for questions with favourite tags",
             "extended_description": "Changes the favourite tag question highlighting to be a more subtle, coloured left-border",

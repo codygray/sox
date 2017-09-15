@@ -294,6 +294,53 @@ li.fixedTopbar-siteLink {
 }
 
 
+/*fixedSearch */
+
+.so-header.fixed-search-sox .-actions,
+.so-header.fixed-search-kbd-sox .-actions {
+    margin-left: 12px; /* decrease padding between search box and user card */
+}
+
+.so-header.fixed-search-sox._search-open .navigation,
+.so-header.fixed-search-kbd-sox._search-open .navigation {
+    max-width: inherit;
+    opacity: inherit;
+}
+
+.so-header.fixed-search-sox .searchbar input[type="text"].f-input {
+    padding-left: 12px;
+    padding-right: 60px;
+}
+.so-header.fixed-search-kbd-sox .searchbar input[type="text"].f-input {
+    padding: 9px;
+}
+
+.so-header.fixed-search-sox .searchbar>.svg-icon,
+.so-header.fixed-search-kbd-sox .searchbar>.svg-icon,
+.so-header.fixed-search-kbd-sox .searchbar .btn {
+    display: none;
+}
+
+.so-header.fixed-search-sox._search-open .searchbar .btn {
+    font-size: 80%;
+    padding-left: 10px;
+    padding-right: 11px;
+}
+.so-header.fixed-search-sox:not(._search-open) .searchbar .btn {
+    font-size: 80%;
+    opacity: 1;
+    z-index: 0;
+    color: #848d95;
+    background-color: inherit;
+    border: inherit;
+    box-shadow: inherit;
+}
+
+.so-header.fixed-search-sox._search-open .searchbar .btn svg {
+    margin-right: -1px;
+}
+
+
 /*Side by Side Editing (SBS, addSBSBtn, startSBS): https://github.com/szego/SE-Answers_scripts/blob/side-by-side/editing-and-toggling/side-by-side-editing.user.js:*/
 
 #sidebar.sbs-on {

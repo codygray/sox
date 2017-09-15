@@ -34,8 +34,8 @@
             "match": "",
             "exclude": "*://chat.*.com/*,SE1.0"
         }, {
-            "name": "dragBounty",
-            "desc": "Make bounty box draggable",
+            "name": "draggablePopups",
+            "desc": "Make all pop-up boxes draggable, including the bounty box",
             "meta": "http://meta.stackexchange.com/questions/170125/make-bounty-custom-message-dialog-box-draggable",
             "match": "*://*/questions*",
             "exclude": "SE1.0"

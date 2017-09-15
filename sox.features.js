@@ -21,11 +21,22 @@
             $('[id="bounty-link bounty"]').closest('tr').insertAfter('.question .fw');
         },
 
-        dragBounty: function() {
-            // Description: Makes the bounty window draggable
+        draggablePopups: function() {
+            // Description: Makes all popup windows draggable (for example, the bounty popup)
 
             sox.helpers.observe('#start-bounty-popup', function() {
                 $('#start-bounty-popup').draggable({
+                    drag: function() {
+                        $(this).css({
+                            'width': 'auto',
+                            'height': 'auto'
+                        });
+                    }
+                }).css('cursor', 'move');
+            });
+            
+            sox.helpers.observe('.no-further-action-popup', function() {
+                $('.no-further-action-popup').draggable({
                     drag: function() {
                         $(this).css({
                             'width': 'auto',
